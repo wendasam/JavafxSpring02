@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="571.0" prefWidth="368.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="571.0" prefWidth="459.0">
+         <center>
+            <StackPane prefHeight="556.0" prefWidth="496.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane prefHeight="556.0" prefWidth="569.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="379.0" minWidth="379.0" prefWidth="379.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <GridPane layoutX="76.0" layoutY="114.0" prefHeight="451.0" prefWidth="359.0" style="-fx-background-color: #99e9f2;" AnchorPane.bottomAnchor="-8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="468.0" prefHeight="468.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="76.0" minHeight="57.0" prefHeight="76.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <AnchorPane prefHeight="135.0" prefWidth="359.0" GridPane.rowIndex="1">
+                                       <children>
+                                          <HBox alignment="CENTER" layoutX="14.0" layoutY="-21.0" prefHeight="72.0" prefWidth="359.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <JFXButton fx:id="btSave" buttonType="RAISED" prefHeight="34.0" prefWidth="91.0" stylesheets="@../../css/buttonOver.css" text="Save" textFill="WHITE">
+                                                   <HBox.margin>
+                                                      <Insets right="5.0" />
+                                                   </HBox.margin>
+                                                   <graphic>
+                                                      <FontAwesomeIconView glyphName="SAVE" size="1.5em" />
+                                                   </graphic>
+                                                   <effect>
+                                                      <DropShadow />
+                                                   </effect>
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </JFXButton>
+                                                <JFXButton fx:id="btDelete" buttonType="RAISED" layoutX="190.0" layoutY="16.0" prefHeight="34.0" prefWidth="91.0" stylesheets="@../../css/buttonOver.css" text="Delete" textFill="WHITE">
+                                                   <graphic>
+                                                      <FontAwesomeIconView glyphName="REMOVE" size="1.5em" />
+                                                   </graphic>
+                                                   <effect>
+                                                      <DropShadow />
+                                                   </effect>
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </HBox.margin>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                          <AnchorPane prefHeight="5.0" prefWidth="359.0" style="-fx-background-color: BLACK;" />
+                                       </children>
+                                    </AnchorPane>
+                                    <VBox prefHeight="463.0" prefWidth="359.0">
+                                       <children>
+                                          <Label text="NPM">
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="50.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <TextField prefHeight="32.0" prefWidth="339.0" promptText="Nomor Pengenal Mahasiswa">
+                                             <VBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </VBox.margin>
+                                          </TextField>
+                                          <Label layoutX="10.0" layoutY="10.0" text="Nama Lengkap">
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="20.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <TextField layoutX="10.0" layoutY="26.0" prefHeight="32.0" prefWidth="339.0" promptText="Nama lengkap mahasiswa">
+                                             <VBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </VBox.margin>
+                                          </TextField>
+                                          <Label layoutX="10.0" layoutY="59.0" text="Jenis Kelamin">
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="20.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <ComboBox prefHeight="32.0" prefWidth="220.0">
+                                             <VBox.margin>
+                                                <Insets left="10.0" />
+                                             </VBox.margin>
+                                          </ComboBox>
+                                          <Label layoutX="10.0" layoutY="108.0" text="Program Studi">
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="20.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <ComboBox layoutX="10.0" layoutY="124.0" prefHeight="32.0" prefWidth="223.0">
+                                             <VBox.margin>
+                                                <Insets left="10.0" />
+                                             </VBox.margin>
+                                          </ComboBox>
+                                          <Label layoutX="10.0" layoutY="157.0" text="Bulan Wisuda">
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="20.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Spinner prefHeight="32.0" prefWidth="222.0">
+                                             <VBox.margin>
+                                                <Insets left="10.0" />
+                                             </VBox.margin>
+                                          </Spinner>
+                                          <Label layoutX="10.0" layoutY="206.0" text="Tahun Wisuda">
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="20.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Spinner layoutX="10.0" layoutY="222.0" prefHeight="32.0" prefWidth="222.0">
+                                             <VBox.margin>
+                                                <Insets left="10.0" />
+                                             </VBox.margin>
+                                          </Spinner>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </GridPane>
+                           </children>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </AnchorPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </StackPane>
+         </center>
+         <bottom>
+            <StackPane prefHeight="15.0" prefWidth="1111.0" style="-fx-background-color: #0b7285;" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</StackPane>

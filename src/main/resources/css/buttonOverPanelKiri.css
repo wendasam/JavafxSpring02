@@ -1,0 +1,9 @@
+#btDesktop{
+    -fx-background-color: #1971c2;
+    -fx-text-fill: white;
+}
+#btDesktop:hover{
+    -fx-background-color:#2c323d;
+    -fx-opacity: 1;
+
+}

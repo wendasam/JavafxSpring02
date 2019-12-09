@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane>
+         <children>
+            <StackPane prefHeight="582.0" prefWidth="866.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0">
+                     <left>
+                        <BorderPane fx:id="paneKiri" prefHeight="650.0" prefWidth="213.0" style="-fx-background-color: #1098ad;" BorderPane.alignment="CENTER" />
+                     </left>
+                     <center>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <StackPane prefHeight="582.0" prefWidth="666.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0">
+                                             <top>
+                                                <StackPane prefHeight="95.0" prefWidth="997.0" BorderPane.alignment="CENTER">
+                                                   <children>
+                                                      <JFXToolbar prefHeight="45.0">
+                                                         <bottom>
+                                                            <AnchorPane BorderPane.alignment="CENTER" />
+                                                         </bottom>
+                                                         <right>
+                                                            <StackPane BorderPane.alignment="CENTER">
+                                                               <children>
+                                                                  <HBox alignment="CENTER">
+                                                                     <children>
+                                                                        <FontAwesomeIconView glyphName="USER" size="2.2em">
+                                                                           <HBox.margin>
+                                                                              <Insets />
+                                                                           </HBox.margin>
+                                                                        </FontAwesomeIconView>
+                                                                        <JFXButton contentDisplay="GRAPHIC_ONLY" HBox.hgrow="ALWAYS">
+                                                                           <graphic>
+                                                                              <FontAwesomeIconView glyphName="ELLIPSIS_V" size="1.5em" />
+                                                                           </graphic>
+                                                                           <HBox.margin>
+                                                                              <Insets left="10.0" right="10.0" />
+                                                                           </HBox.margin>
+                                                                        </JFXButton>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </StackPane>
+                                                         </right>
+                                                         <left>
+                                                            <StackPane BorderPane.alignment="CENTER">
+                                                               <children>
+                                                                  <HBox alignment="CENTER">
+                                                                     <children>
+                                                                        <JFXButton buttonType="RAISED" onAction="#viewLog" prefHeight="51.0" prefWidth="85.0" ripplerFill="#3f9a35" text="View Log" HBox.hgrow="ALWAYS">
+                                                                           <font>
+                                                                              <Font name="System Bold" size="13.0" />
+                                                                           </font></JFXButton>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </StackPane>
+                                                         </left>
+                                                      </JFXToolbar>
+                                                   </children>
+                                                </StackPane>
+                                             </top>
+                                             <center>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                                   <children>
+                                                      <BorderPane fx:id="paneCenter" prefHeight="200.0" prefWidth="1111.0" style="-fx-background-color: #3bc9db;" />
+                                                   </children>
+                                                </StackPane>
+                                             </center>
+                                          </BorderPane>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </StackPane>
+                     </center>
+                     <bottom>
+                        <AnchorPane prefHeight="26.0" prefWidth="1210.0" style="-fx-background-color: #0c8599;" BorderPane.alignment="CENTER" />
+                     </bottom>
+                  </BorderPane>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
